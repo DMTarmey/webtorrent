@@ -84,6 +84,7 @@
     "ut_metadata": "^4.0.3",
     "ut_pex": "^4.0.4",
     "wd": "^1.14.0",
+    "webtorrent": "^2.5.5",
     "xmldom": "^0.6.0"
   },
   "devDependencies": {
