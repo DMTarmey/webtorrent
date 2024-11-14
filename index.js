@@ -13,7 +13,21 @@ const app = express()
 const PORT = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
-  res.send('WebTorrent server is running!')
+  res.send(`
+    <html>
+      <head>
+        <title>WebTorrent Server</title>
+      </head>
+      <body>
+        <h1>WebTorrent Server is Running!</h1>
+        <p>Welcome to the WebTorrent server. This server is currently running and ready to handle requests.</p>
+        <ul>
+          <li>Version: ${VERSION}</li>
+          <li>Port: ${PORT}</li>
+        </ul>
+      </body>
+    </html>
+  `)
 })
 
 app.listen(PORT, () => {
