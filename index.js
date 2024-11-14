@@ -25,9 +25,19 @@ app.get('/', (req, res) => {
           <li>Version: ${VERSION}</li>
           <li>Port: ${PORT}</li>
         </ul>
+        <p>Use the <a href="/status">status</a> endpoint to check server status.</p>
       </body>
     </html>
   `)
+})
+
+app.get('/status', (req, res) => {
+  res.json({
+    status: 'running',
+    version: VERSION,
+    port: PORT,
+    uptime: process.uptime()
+  })
 })
 
 app.listen(PORT, () => {
