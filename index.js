@@ -2,7 +2,7 @@
 import express from 'express'
 import debugFactory from 'debug'
 import { EventEmitter } from 'events'
-import { Peer } from 'peer-module-name' // Replace 'peer-module-name' with the actual module name
+import Peer from './lib/peer.js'
 import ConnPool from './lib/conn-pool.js'
 import { readFileSync } from 'fs'
 
