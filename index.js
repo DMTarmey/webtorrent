@@ -26,6 +26,22 @@ app.get('/', (req, res) => {
           <li>Port: ${PORT}</li>
         </ul>
         <p>Use the <a href="/status">status</a> endpoint to check server status.</p>
+        <p>For more information, visit the <a href="/info">info</a> page.</p>
+      </body>
+    </html>
+  `)
+})
+
+app.get('/info', (req, res) => {
+  res.send(`
+    <html>
+      <head>
+        <title>WebTorrent Server Info</title>
+      </head>
+      <body>
+        <h1>WebTorrent Server Information</h1>
+        <p>This server is part of the WebTorrent project, a streaming torrent client for node.js and the web.</p>
+        <p>For more details, visit the <a href="https://webtorrent.io">WebTorrent website</a>.</p>
       </body>
     </html>
   `)
