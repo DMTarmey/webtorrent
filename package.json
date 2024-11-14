@@ -71,7 +71,7 @@
     "run-parallel": "^1.2.0",
     "yargs": "^17.6.2",
     "run-parallel-limit": "^1.1.0",
-    "semver": "^7.6.4",
+    "semver": "^7.5.4",
     "speed-limiter": "^1.0.2",
     "streamx": "2.20.1",
     "tar": "^7.4.3",
