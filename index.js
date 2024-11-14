@@ -1,23 +1,16 @@
 /*! webtorrent. MIT License. WebTorrent LLC <https://webtorrent.io/opensource> */
-import EventEmitter from 'events'
-import path from 'path'
-import createTorrent, { parseInput } from 'create-torrent'
-import debugFactory from 'debug'
-import { Client as DHT } from 'bittorrent-dht' // browser exclude
-import loadIPSet from 'load-ip-set' // browser exclude
-import parallel from 'run-parallel'
-import parseTorrent from 'parse-torrent'
-import Peer from '@thaunknown/simple-peer/lite.js'
-import queueMicrotask from 'queue-microtask'
-import { hash, hex2arr, arr2hex, arr2base, text2arr, randomBytes, concat } from 'uint8-util'
-import throughput from 'throughput'
-import { ThrottleGroup } from 'speed-limiter'
-import NatAPI from '@silentbot1/nat-api' // browser exclude
-import ConnPool from './lib/conn-pool.js' // browser exclude
-import Torrent from './lib/torrent.js'
-import { NodeServer, BrowserServer } from './lib/server.js'
+import express from 'express'
 
-import VERSION from './version.cjs'
+const app = express()
+const PORT = process.env.PORT || 3000
+
+app.get('/', (req, res) => {
+  res.send('WebTorrent server is running!')
+})
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`)
+})
 
 const debug = debugFactory('webtorrent')
 
