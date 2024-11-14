@@ -3,6 +3,7 @@ import express from 'express'
 import debugFactory from 'debug'
 import { EventEmitter } from 'events'
 import Peer from './lib/peer.js'
+import ConnPool from './lib/conn-pool.js'
 import { readFileSync } from 'fs'
 
 const packageJson = JSON.parse(readFileSync(new URL('./package.json', import.meta.url)))
