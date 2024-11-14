@@ -1,5 +1,6 @@
 /*! webtorrent. MIT License. WebTorrent LLC <https://webtorrent.io/opensource> */
 import express from 'express'
+import debugFactory from 'debug'
 
 const app = express()
 const PORT = process.env.PORT || 3000
