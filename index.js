@@ -1,6 +1,10 @@
 /*! webtorrent. MIT License. WebTorrent LLC <https://webtorrent.io/opensource> */
 import express from 'express'
 import debugFactory from 'debug'
+import { readFileSync } from 'fs'
+
+const packageJson = JSON.parse(readFileSync(new URL('./package.json', import.meta.url)))
+const VERSION = packageJson.version
 
 const app = express()
 const PORT = process.env.PORT || 3000
