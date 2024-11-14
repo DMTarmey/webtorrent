@@ -171,6 +171,7 @@
     "url": "git://github.com/webtorrent/webtorrent.git"
   },
   "scripts": {
+    "start": "node index.js",
     "build": "npm run build-js && npm run build-js-worker && npm run build-chromeapp",
     "build-chromeapp": "webpack --config ./scripts/chromeapp.webpack.js",
     "build-js": "webpack --config ./scripts/browser.webpack.js",
