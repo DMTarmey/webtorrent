@@ -112,7 +112,7 @@
     "buffer": "^6.0.3",
     "chrome-net": "^3.3.4",
     "crypto-browserify": "^3.12.1",
-    "eslint": "^9.14.0",
+    "eslint": "^8.0.1",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^16.6.2",
