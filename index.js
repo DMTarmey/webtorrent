@@ -622,6 +622,12 @@ export default class WebTorrent extends EventEmitter {
   }
 }
 
+// Example usage: Create a WebTorrent client and log its version
+const client = new WebTorrent()
+console.log(`WebTorrent client version: ${WebTorrent.VERSION}`)
+
+// Add more logic here to add torrents, seed files, etc.
+
 WebTorrent.WEBRTC_SUPPORT = Peer.WEBRTC_SUPPORT
 WebTorrent.UTP_SUPPORT = ConnPool.UTP_SUPPORT
 WebTorrent.VERSION = VERSION
