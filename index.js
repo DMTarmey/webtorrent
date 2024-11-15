@@ -9,7 +9,7 @@ import { randomBytes } from 'crypto'
 import pkg from 'streamx'
 const { ThrottleGroup } = pkg
 import { parse as parseTorrent } from 'parse-torrent'
-import { create as createTorrent } from 'create-torrent'
+import createTorrent from 'create-torrent'
 import { load as loadIPSet } from 'load-ip-set'
 import path from 'path'
 import { concat } from 'uint8-util'
