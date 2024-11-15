@@ -8,7 +8,7 @@ import { readFileSync } from 'fs'
 import { randomBytes } from 'crypto'
 import pkg from 'streamx'
 const { ThrottleGroup } = pkg
-import { parse as parseTorrent } from 'parse-torrent'
+import parseTorrent from 'parse-torrent'
 import createTorrent from 'create-torrent'
 import loadIPSet from 'load-ip-set'
 import path from 'path'
