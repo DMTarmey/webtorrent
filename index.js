@@ -16,7 +16,7 @@ import parallel from 'run-parallel'
 import { hash } from 'uint8-util'
 import { arr2hex, text2arr, arr2base, hex2arr } from 'uint8-util'
 import NatAPI from '@silentbot1/nat-api'
-import NodeServer from './lib/server.js'
+import { NodeServer } from './lib/server.js'
 import { BrowserServer } from './lib/server.js'
 
 // Define or import missing variables
